@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVEN or ODD?</title>
+</head>
+<body>
+    <h1>CHECK EVEN ODD</h1>
+    <p>Enter Number:</p>
+    <input type="number" name="number_input" id="number_input"><br><br>
+    <input type="submit" value="Check" onclick="checkEvenOdd()">
+</body>
+<script>
+    function checkEvenOdd(){
+        // console.log("Inside function");
+        let number = document.getElementById("number_input").value;
+        // console.log(number);
+        // if(number>0)  alert("The Number is positive");
+        // if(number<0)  alert ("Number is Negative");
+        // if(number == 0)  alert("Number is zero");
+
+        // if(number>0) {
+        //     alert("NUMBER IS POSITIVE");
+        // }
+        // else if(number<0) {
+        //     alert("NUMBER IS NEGATIVE");
+        // }
+        // else if(number==0) {
+        //     alert("NUMBER IS ZERO")
+        // }
+        // else {
+        //     alert("INVALID INPUT");
+        // }
+
+        // if(number%5==0 && number%2==0){
+        //     alert("Yesss This Number is Divisible By Both Two and Five");
+        // }
+        // else {
+        //     alert("No This Number is NOT Divisible By either Two or Five");
+        // }
+
+
+        // if(age>=18 && age<=65){
+        //     alert("Congratulations, You are eligible for this")
+        // }
+        // else {
+        //     alert("Better Luck Next Time!!")
+        // }
+
+        if(number%2==0){
+            alert("EVEN")
+        }
+        else if(number%2==1){
+            alert("ODD");
+        }
+        else{
+            alert("ENTER DECIMALS ONLY");        
+        }
+    }
+</script>
+</html>
