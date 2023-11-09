@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Is This Number Divisble</title>
+</head>
+<body>
+    <h1>CHECK IF ELIGIBLE BY 2 OR 5</h1>
+    <p>Enter Any Number:</p>
+    <input type="number" name="number_input" id="number_input"><br><br>
+    <input type="submit" value="Check" onclick="checkMyNumberIsDivisibleBy2and5()">
+</body>
+<script>
+    function checkMyNumberIsDivisibleBy2and5(){
+        // console.log("Inside function");
+        let number = document.getElementById("number_input").value;
+        // console.log(number);
+        // if(number>0)  alert("The Number is positive");
+        // if(number<0)  alert ("Number is Negative");
+        // if(number == 0)  alert("Number is zero");
+
+        // if(number>0) {
+        //     alert("NUMBER IS POSITIVE");
+        // }
+        // else if(number<0) {
+        //     alert("NUMBER IS NEGATIVE");
+        // }
+        // else if(number==0) {
+        //     alert("NUMBER IS ZERO")
+        // }
+        // else {
+        //     alert("INVALID INPUT");
+        // }
+
+        if(number%5==0 && number%2==0){
+            alert("Yesss This Number is Divisible By Both Two and Five");
+        }
+        else {
+            alert("No This Number is NOT Divisible By either Two or Five");
+        }
+    }
+</script>
+</html>

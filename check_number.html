@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Number</title>
+</head>
+<body>
+    <h1>CHECK IF NUMBER IS POSITIVE/NEGATIVE OR ZERO</h1>
+    <p>Enter Any Number:</p>
+    <input type="number" name="number_input" id="number_input"><br><br>
+    <input type="submit" value="Check" onclick="checkMyNumber()">
+</body>
+<script>
+    function checkMyNumber(){
+        // console.log("Inside function");
+        let number = document.getElementById("number_input").value;
+        // console.log(number);
+        // if(number>0)  alert("The Number is positive");
+        // if(number<0)  alert ("Number is Negative");
+        // if(number == 0)  alert("Number is zero");
+
+        if(number>0) {
+            alert("NUMBER IS POSITIVE");
+        }
+        else if(number<0) {
+            alert("NUMBER IS NEGATIVE");
+        }
+        else if(number==0) {
+            alert("NUMBER IS ZERO")
+        }
+        else {
+            alert("INVALID INPUT");
+        }
+    }
+</script>
+</html>
