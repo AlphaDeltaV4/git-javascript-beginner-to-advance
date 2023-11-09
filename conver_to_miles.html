@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConvertToMiles</title>
+</head>
+<body>
+    <h1>CONVERT TO MILES</h1>
+    <p>Enter Kilometers:</p>
+    <input type="number" name="number_input" id="number_input"><br><br>
+    <input type="submit" value="Check" onclick="convertToMiles()">
+</body>
+<script>
+    function convertToMiles(){
+        // console.log("Inside function");
+        let number = document.getElementById("number_input").value;
+        // console.log(number);
+        // if(number>0)  alert("The Number is positive");
+        // if(number<0)  alert ("Number is Negative");
+        // if(number == 0)  alert("Number is zero");
+
+        // if(number>0) {
+        //     alert("NUMBER IS POSITIVE");
+        // }
+        // else if(number<0) {
+        //     alert("NUMBER IS NEGATIVE");
+        // }
+        // else if(number==0) {
+        //     alert("NUMBER IS ZERO")
+        // }
+        // else {
+        //     alert("INVALID INPUT");
+        // }
+
+        // if(number%5==0 && number%2==0){
+        //     alert("Yesss This Number is Divisible By Both Two and Five");
+        // }
+        // else {
+        //     alert("No This Number is NOT Divisible By either Two or Five");
+        // }
+
+
+        // if(age>=18 && age<=65){
+        //     alert("Congratulations, You are eligible for this")
+        // }
+        // else {
+        //     alert("Better Luck Next Time!!")
+        // }
+        const oneKilometer = 0.621371;
+        let convertedValue;
+        convertedValue = number *  oneKilometer;
+        // console.log(`${number}km is ${convertedValue} miles`);
+        alert(`${number}km is ${convertedValue} miles`);
+    }
+</script>
+</html>
