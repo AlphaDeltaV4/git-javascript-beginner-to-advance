@@ -1,5 +1,5 @@
 // console.log("LINE ONE EX")
-let a=25, b=9;
+let a=25, b=15;
 let sum = a+b;
 let diff = a-b;
 if(a === 15 || b===15){
